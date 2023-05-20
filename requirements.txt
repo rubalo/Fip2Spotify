@@ -1,4 +1,9 @@
 beautifulsoup4
+click
+gitpython
 html5lib
 lxml
+pandas
+python-dotenv
 requests
+spotipy
