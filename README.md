@@ -29,8 +29,11 @@ Run the main file
 ```zsh
 Usage: main.py [OPTIONS] COMMAND [ARGS]...
 
-  Common ground for command configuration :param ctx: Context object :type
-  ctx: click.Context
+  Trying to find a song from FIP ? This program will fetch tracks for about
+  the last week and creates a Spotify playlist with them. Limit to songs aired
+  between 7am and 0am, cf parse_track.py Some songs that can't be found using
+  the spotify search api will be logged in data/failed_searches.log. The
+  playlist will be named FIP -  YYYYmmdd_HHMMSS
 
 Options:
   --help  Show this message and exit.
@@ -41,7 +44,6 @@ Commands:
   fetch-ids        Find track ids on Spotify
   fetch-tracks     Fetch tracks from the site...
   parse-tracks     Parse tracks from the fetched data
-
 ```
 
 Run commands in order : 
