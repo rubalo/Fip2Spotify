@@ -6,12 +6,10 @@
 Fetch about one week of tracks from fip and creates a spotify playlist from them
 Personnal project to discover the spotify api
 
-Use http://127.0.0.1 as redirect uri
-
 
 ## Usage 
 
-Create a developper app from spotify : 
+Create a developper app from spotify and use http://127.0.0.1 as redirect uri: 
 https://developer.spotify.com/dashboard
 
 Create a .env file at the root of the repo containing : 
@@ -54,6 +52,22 @@ Run commands in order :
 * Parse tracks
 * Fetch ids
 * Create playlist
+
+## Warning
+
+*During the first run at some point, the spotipy librairy will request a token from spotify and cache it (a .cache file will be created). A SSO page will open in the browser with an error "Unable to connect", copy the entire url in the terminal* 
+
+```txt
+❯ python main.py fetch-ids
+Parsing titles from tracks.csv
+Using `127.0.0.1` as redirect URI without a port. Specify a port (e.g. `127.0.0.1:8080`) to allow automatic retrieval of authentication code instead of having to copy and paste the URL your browser is redirected to.
+Enter the URL you were redirected to:
+
+https://127.0.0.1/?code=xxxxxxxxxxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-Xxxxxxxxxxxxxxxxxxxxxxxxxxx_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+
+
 
 ## Links / Thanks
 
