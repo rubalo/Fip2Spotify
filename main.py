@@ -71,5 +71,21 @@ def create_playlist(ctx) -> None:
     populate_playlist(conf)
 
 
+@cli.command(help="Fetch, parse, find ids and create a playlist")
+@click.pass_context
+def all(ctx) -> None:
+    """
+    Fetch, parse, find ids and create a playlist
+
+    :param ctx: Context object
+    :type ctx: click.Context
+    """
+    conf = ctx.obj["CONF"]
+    fetch_tracks_info(conf.data_folder)
+    parse_tracks_info(conf)
+    fetch_tracks_ids(conf)
+    populate_playlist(conf)
+
+
 if __name__ == "__main__":
     cli(obj={})
