@@ -6,6 +6,8 @@
 Fetch about one week of tracks from fip and creates a spotify playlist from them
 Personnal project to discover the spotify api
 
+Use http://127.0.0.1 as redirect uri
+
 
 ## Usage 
 
@@ -53,7 +55,8 @@ Run commands in order :
 * Fetch ids
 * Create playlist
 
-## Links
+## Links / Thanks
 
 * https://www.radiofrance.fr/fip
 * https://www.playlisteradio.com/fip-radio
+* https://spotipy.readthedocs.io/en/2.22.1/
