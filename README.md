@@ -1,4 +1,4 @@
-# FipPlaylist
+# Fip2Spotify
 
 
 # Description
