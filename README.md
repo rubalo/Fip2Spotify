@@ -26,10 +26,10 @@ Install requirements.txt
 
 Run the main file
 
-```zsh
+```txt
 Usage: main.py [OPTIONS] COMMAND [ARGS]...
 
-  Trying to find a song from FIP ? This program will fetch tracks for about
+  Trying to find a song from FIP radio ? This program will fetch tracks for about
   the last week and creates a Spotify playlist with them. Limit to songs aired
   between 7am and 0am, cf parse_track.py Some songs that can't be found using
   the spotify search api will be logged in data/failed_searches.log. The
@@ -51,3 +51,8 @@ Run commands in order :
 * Parse tracks
 * Fetch ids
 * Create playlist
+
+## Links
+
+* https://www.radiofrance.fr/fip
+* https://www.playlisteradio.com/fip-radio
