@@ -1,7 +1,7 @@
 # Fip2Spotify
 
 
-# Description
+## Description
 
 Fetch about one week of tracks from fip and creates a spotify playlist from them
 Personnal project to discover the spotify api
